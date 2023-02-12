@@ -63,6 +63,7 @@ The testbench comprises five tests covering key scenarios of multi-controller (3
 
 6.	Clock synchronization and arbitration verification
 	The two controllers try to control the I2C lines. The timing specifiaction of the two are deliberately different to verify the clock synchronization logic (please see the I2C protocal manual for detailed explanation). Controller '1' is the 'winner' of the arbritration procedure (after the 4th address bit).
+	
 	**Clock synchronization and arbitration verification: controller '1' wins the arbritration proccess:**
 		![tst6](./docs/tst6_wave.jpg)  
 		
