@@ -33,21 +33,38 @@ The testbench comprises five tests covering key scenarios of multi-controller (3
 	Here the data sent from the controller to the peripheral unit is 24-bit long (3 data frames, 110010101111000110101111). 
 	The target unit is 'target_1' (addr_1=7'b1000111) which is configured to execute byte-level clock streching.
 	
-	**Communication between controller 1 and target 1:**
+	**Communication between controller '1' and target '1':**
 		![tst1_wave](./docs/tst1_wave.jpg)  
 		
 2.	Communication between controller '2' and target '2'. Write data from controller to target (2 data frames).
 	Here the data sent from the controller to the peripheral unit is 16-bit long (2 data frames, 0011010111001111). 
 	The target unit is 'target_2' (addr_1=7'b1001111) which is configured to execute byte-level clock streching.
 	
-	**Communication between controller 2 and target 2:**
+	**Communication between controller '2' and target '2':**
 		![tst2](./docs/tst2_wave.jpg)  
 
-3.	Communication between controller 3 and an unkown target (address mismatch - terminated after the acknoledgement bit)
+3.	Communication between controller '3' and an unkown target (address mismatch - terminated after the acknoledgement bit)
 	Here the address of the target device (7'b1111110) does not match to any existing devices on the line. 
 	
-	**Communication between controller 3 and unkown target device:**
+	**Communication between controller '3' and unkown target device:**
 		![tst3](./docs/tst3_wave.jpg)  
+
+4.	Communication between controller '1' and target '2'. Read data from target to controller (2 bytes are read)
+	Note: Clock strectching is carried only when data is transferred from the controller to the target.
+	
+	**Communication between controller 3 and unkown target device:**
+		![tst4](./docs/tst4_wave.jpg)  
+		
+5.	Communication between controller '1' and target '1'. Read data from target to controller (1 byte is read)
+	Note: Clock strectching is carried only when data is transferred from the controller to the target.
+	
+	**Communication between controller 3 and unkown target device:**
+		![tst5](./docs/tst5_wave.jpg)  
+
+6.	Clock synchronization and arbitration verification
+	The two controllers try to control the I2C lines. The timing specifiaction of the two are deliberately different to verify the clock synchronization logic (please see the I2C protocal manual for detailed explanation). Controller '1' is the 'winner' of the arbritration procedure (after the 4th address bit).
+	**Clock synchronization and arbitration verification: controller '1' wins the arbritration proccess:**
+		![tst6](./docs/tst6_wave.jpg)  
 		
 ## Support
 
