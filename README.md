@@ -17,8 +17,9 @@ The source files  are located at the repository root:
 This repository containts a SystemVerilog implementation of I2C controller and target modules designed in accordance with the [I2C-bus specification manual by NXP (Rev. 7.0, October 2021)](https://www.pololu.com/file/0J435/UM10204.pdf)
 
 The two modules are built as FSMs which emcapsulte the periodic structure of the I2C protocol. It is advised to draw a simple flowchart when reading the sourcecode for better undrstanding. Shown below is a simplified version of the controller's flowchart for better understanding:
-
+<p align="center">
 ![Controller_flowchart](./docs/Controller_flowchart.JPG) 
+</p>
 
 Apart from 'vanilla' I2C protocol following features are supported:
 1.  Clock stretching by the target
