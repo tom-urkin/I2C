@@ -40,8 +40,14 @@ The testbench comprises five tests covering key scenarios of multi-controller (3
 	Here the data sent from the controller to the peripheral unit is 16-bit long (2 data frames, 0011010111001111). 
 	The target unit is 'target_2' (addr_1=7'b1001111) which is configured to execute byte-level clock streching.
 	
-	**Communication between controller 1 and target 1:**
-		![tst2](./docs/tst2.JPG)  
+	**Communication between controller 2 and target 2:**
+		![tst2](./docs/tst2_wave.jpg)  
+
+3.	Communication between controller 3 and an unkown target (address mismatch - terminated after the acknoledgement bit)
+	Here the address of the target device (7'b1111110) does not match to any existing devices on the line. 
+	
+	**Communication between controller 3 and unkown target device:**
+		![tst3](./docs/tst3_wave.jpg)  
 		
 ## Support
 
