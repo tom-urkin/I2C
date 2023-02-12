@@ -34,7 +34,7 @@ The testbench comprises five tests covering key scenarios of multi-controller (3
 	The target unit is 'target_1' (addr_1=7'b1000111) which is configured to execute byte-level clock streching.
 	
 	**Communication between controller 1 and target 1:**
-		![tst1](./docs/tst1.JPG)  
+		![tst1](./docs/tst1_wave.JPG)  
 1.	Communication between controller '2' and target '2'. Write data from controller to target (2 data frames).
 	Here the data sent from the controller to the peripheral unit is 16-bit long (2 data frames, 0011010111001111). 
 	The target unit is 'target_2' (addr_1=7'b1001111) which is configured to execute byte-level clock streching.
