@@ -24,7 +24,7 @@ Apart from 'vanilla' I2C protocol following features are supported:
 2.	Clock synchronization and arbritration for multi-controller systems
 
 All timing parameters are defined as constants which can be overidden to comply with different target'/controllers' requirement. Please refer to section 6 of the I2C bus specification manual for the definition ofthese timing intervals. 
-
+The open drain configuration is mimicked here by using 'tri1' wire type for the SCL and SDA lines.
 ## Testbench
 
 The testbench comprises five tests covering key scenarios of multi-controller (3) multi-target (2) I2C systems.
