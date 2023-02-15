@@ -74,10 +74,10 @@ Here an the msater module is.....
 	The written data is : 8'h2e,8'h42,8'h45,8'h03,8'h07,8'h01,8'h72 to registers 00h->XXX
 	
 	**Setting the time and date:**
-		![experimental_setting_time_and_date](./docs/experimental_setting_time_and_date.PNG)  
+		![experimental_setting_time_and_date](./docs/experimental_setting_time_and_date.png)  
 
 	**Zoom in on the DS3231 address and first byte sent:**
-		![experimental_setting_time_and_date_zoom_in](./docs/experimental_setting_time_and_date_zoom_in.PNG)  
+		![experimental_setting_time_and_date_zoom_in](./docs/experimental_setting_time_and_date_zoom_in.png)  
 
 
 		
