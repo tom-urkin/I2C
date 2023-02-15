@@ -94,7 +94,7 @@ Here an the msater module is.....
 		![Read_data_zoom_in](./docs/Read_data_zoom_in.png) 			
 		
 	**The read data can also be observed via the signaltap on the FPGA for verification purposes as follows:**
-		![SignalTap](./docs/SignalTap.jpg)		
+		![SignalTap](./docs/SignalTap.JPG)		
 		
 ## Support
 
