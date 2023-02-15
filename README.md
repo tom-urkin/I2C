@@ -79,7 +79,22 @@ Here an the msater module is.....
 	**Zoom in on the DS3231 address and first byte sent:**
 		![experimental_setting_time_and_date_zoom_in](./docs/experimental_setting_time_and_date_zoom_in.png)  
 
+2.	Setting the control register
+	The control register is located on address XXX. The data written dictates output square wave frequency of 8kHz...
+	
+	**Setting the control register:**
+		![Setting_control_register](./docs/Setting_control_register.png)  
 
+3.	Read data from the RTC to the controller module in the FPGA
+	
+	**Read_data:**
+		![Read_data](./docs/Read_data.png) 		
+		
+	**Read_data zoom-in:**
+		![Read_data_zoom_in](./docs/Read_data_zoom_in.png) 			
+		
+	**The read data can also be observed via the signaltap on the FPGA for verification purposes as follows:**
+		![SignalTap](./docs/SignalTap.jpg)		
 		
 ## Support
 
