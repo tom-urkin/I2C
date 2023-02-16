@@ -69,7 +69,7 @@ The testbench comprises five tests covering key scenarios of multi-controller (3
 
 ## FPGA - DS3231 RTC Interface
 A real-time-clock (RTC) IC is programmed via I2C protocol. Here, the controller module described above is realized on an altera Cyclone V FPGA while the RTC IC acts as the target device (target address 7'b1101000). 
-The datasheet of the DS3231 RTC IC can be found in the following [link](https://www.pololu.com/file/0J435/UM10204.pdf).
+The datasheet of the DS3231 RTC IC can be found in the following [link](https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf).
 
 1.	Setting the time and date
 	The written data is : 8'h2e,8'h42,8'h45,8'h03,8'h07,8'h01,8'h72 to registers 00h->06h. This sets the time and data to: 05:42:34 Tuesday, January 7th in year 72.
@@ -94,7 +94,7 @@ The datasheet of the DS3231 RTC IC can be found in the following [link](https://
 		![Read_data](./docs/Read_data.jpg) 		
 		
 	**The read data can also be observed via the signaltap on the FPGA for verification purposes as follows:**
-		![SignalTap](./docs/SignalTap.jpg)		
+		![SignalTap](./docs/SignalTap.JPG)		
 		
 ## Support
 
