@@ -96,6 +96,7 @@ The datasheet of the DS3231 RTC IC can be found in the following [link](https://
 	**The read data can also be observed via the signaltap on the FPGA for verification purposes as follows:**
 		![SignalTap](./docs/SignalTap.JPG)		
 		
+	**Please note that channel two (green) is SCL and not SDA - will be corrected soon :)**
 ## Support
 
 I will be happy to answer any questions.  
